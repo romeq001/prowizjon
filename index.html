@@ -2,53 +2,52 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mój landing page</title>
-  <meta name="description" content="Prosty landing page hostowany na GitHub Pages" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>prowizjon.pl</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
     }
+
     .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 80px 20px;
-      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-image: url("prowizjon.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 16px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-    a.btn {
+
+    .btn {
       display: inline-block;
-      padding: 14px 24px;
-      background: #2563eb;
-      color: white;
+      padding: 16px 28px;
+      background: rgba(17, 17, 17, 0.85);
+      color: #fff;
       text-decoration: none;
       border-radius: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background: rgba(17, 17, 17, 0.95);
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <a
+      class="btn"
       href="https://www.aftermarket.pl/domena/prowizjon.pl/"
       target="_blank"
       rel="noopener"
-      style="display:inline-block;padding:12px 20px;background:#111;color:#fff;text-decoration:none;border-radius:8px;margin-bottom:20px;"
     >
       Kup lub licytuj tę domenę
     </a>
-  
-    <img src="prowizjon.png" alt="Prowizjon" />
   </div>
 </body>
 </html>
